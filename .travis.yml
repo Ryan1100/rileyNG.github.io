@@ -9,9 +9,16 @@ branches:
   only:
     - hugo 
 
+# install:
+# # 安装最新的hugo
+#   - go get github.com/spf13/hugo 
 install:
-# 安装最新的hugo
-  - go get github.com/spf13/hugo 
+    - uname -a
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+    - hugo version
+    - ls
+    - pwd
 
 script:
 # 运行hugo命令
