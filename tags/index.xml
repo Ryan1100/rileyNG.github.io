@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 一二三四</title>
+    <title>Tags on A simple blog</title>
     <link>https://rileyng.github.io/tags/</link>
-    <description>Recent content in Tags on 一二三四</description>
+    <description>Recent content in Tags on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 01 May 2019 16:42:09 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -66,7 +66,7 @@
     </item>
     
     <item>
-      <title>theme</title>
+      <title>Theme</title>
       <link>https://rileyng.github.io/tags/theme/</link>
       <pubDate>Mon, 01 Apr 2019 14:26:00 +0800</pubDate>
       
