@@ -1,6 +1,0 @@
-[submodule "themes/even"]
-	path = themes/even
-	url = git@github2.com:olOwOlo/hugo-theme-even.git
-[submodule "themes/zozo"]
-	path = themes/zozo
-	url = git@github2.com:imzeuk/hugo-theme-zozo.git
