@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test on A simple blog</title>
-    <link>https://rileyng.github.io/tags/test/</link>
+    <link>/tags/test/</link>
     <description>Recent content in test on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 May 2019 16:42:09 +0800</lastBuildDate>
     
-	<atom:link href="https://rileyng.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ok</title>
-      <link>https://rileyng.github.io/post/ok/</link>
+      <link>/post/ok/</link>
       <pubDate>Wed, 01 May 2019 16:42:09 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/ok/</guid>
+      <guid>/post/ok/</guid>
       <description>OK sdssdd
 asds sadsdd</description>
     </item>

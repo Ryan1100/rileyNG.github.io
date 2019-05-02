@@ -1,21 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>A simple blog</title>
-    <link>https://rileyng.github.io/</link>
+    <link>/</link>
     <description>Recent content on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 01 May 2019 16:42:09 +0800</lastBuildDate>
     
-        <atom:link href="https://rileyng.github.io/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ok</title>
-      <link>https://rileyng.github.io/post/ok/</link>
+      <link>/post/ok/</link>
       <pubDate>Wed, 01 May 2019 16:42:09 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/ok/</guid>
+      <guid>/post/ok/</guid>
       <description>
 
 &lt;h1 id=&#34;ok&#34;&gt;OK&lt;/h1&gt;
@@ -30,30 +30,30 @@
     
     <item>
       <title>About</title>
-      <link>https://rileyng.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 01 May 2019 16:14:21 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;Building&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://rileyng.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 01 May 2019 16:14:21 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;Building&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>药师灌顶真言</title>
-      <link>https://rileyng.github.io/post/chinese-preview/</link>
+      <link>/post/chinese-preview/</link>
       <pubDate>Thu, 11 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/chinese-preview/</guid>
+      <guid>/post/chinese-preview/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;修学药师灌顶真言是药师法门的一部分，读诵修持有着极大的功德利益&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -145,10 +145,10 @@
     
     <item>
       <title>日本語敬語体系</title>
-      <link>https://rileyng.github.io/post/japanese-preview/</link>
+      <link>/post/japanese-preview/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/japanese-preview/</guid>
+      <guid>/post/japanese-preview/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに丁重語および美化語を含めた5分類を示している。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -178,10 +178,10 @@
     
     <item>
       <title>Creating a New Theme</title>
-      <link>https://rileyng.github.io/post/english-preview/</link>
+      <link>/post/english-preview/</link>
       <pubDate>Mon, 01 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/english-preview/</guid>
+      <guid>/post/english-preview/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.&lt;/p&gt;
@@ -2020,10 +2020,10 @@ $ vi themes/zafta/layouts/_default/single.html
     
     <item>
       <title>Theme Preview</title>
-      <link>https://rileyng.github.io/post/theme-preview/</link>
+      <link>/post/theme-preview/</link>
       <pubDate>Sun, 31 Mar 2019 17:49:40 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/theme-preview/</guid>
+      <guid>/post/theme-preview/</guid>
       <description>&lt;h1 id=&#34;headings&#34;&gt;Headings&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -2102,7 +2102,7 @@ Local Image
 
 &lt;p&gt;Local Image&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://rileyng.github.io/apple-touch-icon.png&#34; alt=&#34;Local Image&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/apple-touch-icon.png&#34; alt=&#34;Local Image&#34; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;block-quotes&#34;&gt;Block Quotes&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

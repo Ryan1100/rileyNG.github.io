@@ -1,117 +1,117 @@
-<?xml-stylesheet type="text/xsl" href="https://rileyng.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://rileyng.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2019-05-01T16:42:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/ok/</loc>
+    <loc>/post/ok/</loc>
     <lastmod>2019-05-01T16:42:09+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2019-05-01T16:42:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-05-01T16:42:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/test/</loc>
+    <loc>/tags/test/</loc>
     <lastmod>2019-05-01T16:42:09+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-05-01T16:14:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2019-05-01T16:14:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/%E4%B8%AD%E6%96%87/</loc>
+    <loc>/tags/%E4%B8%AD%E6%96%87/</loc>
     <lastmod>2019-04-11T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/%E7%9C%9F%E8%A8%80/</loc>
+    <loc>/tags/%E7%9C%9F%E8%A8%80/</loc>
     <lastmod>2019-04-11T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/chinese-preview/</loc>
+    <loc>/post/chinese-preview/</loc>
     <lastmod>2019-04-11T14:26:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/%E4%BD%93%E7%B3%BB/</loc>
+    <loc>/tags/%E4%BD%93%E7%B3%BB/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
+    <loc>/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/japanese-preview/</loc>
+    <loc>/post/japanese-preview/</loc>
     <lastmod>2019-04-10T14:26:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/english-preview/</loc>
+    <loc>/post/english-preview/</loc>
     <lastmod>2019-04-01T14:26:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/english/</loc>
+    <loc>/tags/english/</loc>
     <lastmod>2019-04-01T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/tags/theme/</loc>
+    <loc>/tags/theme/</loc>
     <lastmod>2019-04-01T14:26:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/theme-preview/</loc>
+    <loc>/post/theme-preview/</loc>
     <lastmod>2019-03-31T17:49:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
