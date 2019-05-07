@@ -1,7 +1,7 @@
 ---
 title: "日本語敬語体系"
 date: 2019-04-10T14:26:00+08:00
-draft: false
+draft: true
 tags: ["日本語", "体系"]
 slug: "Japanese-Preview"
 ---

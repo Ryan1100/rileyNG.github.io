@@ -1,7 +1,7 @@
 ---
 title: "Creating a New Theme"
 date: 2019-04-01T14:26:00+08:00
-draft: false
+draft: true
 tags: ["English", "Theme"]
 slug: "English Preview"
 ---

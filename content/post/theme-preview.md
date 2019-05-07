@@ -2,7 +2,7 @@
 title: "Theme Preview"
 date: 2019-03-31T17:49:40+08:00
 hidden: false
-draft: false
+draft: true
 tags: ["theme"]
 keywords: []
 description: ""
