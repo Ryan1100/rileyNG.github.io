@@ -56,7 +56,7 @@ if (!doNotTrack) {
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://rileyng.github.io/" />
 
-<meta property="og:updated_time" content="2019-05-06T22:03:59&#43;08:00"/>
+<meta property="og:updated_time" content="2019-05-07T10:38:37&#43;08:00"/>
 
 <meta itemprop="name" content="A simple blog">
 <meta itemprop="description" content="Hugo theme even example site.">
@@ -128,6 +128,36 @@ if (!doNotTrack) {
       <div class="content-wrapper">
         <div id="content" class="content">
           <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/hugo-travis/">Hugo 博客使用 Travis CI 部署</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2019-05-07 </span>
+      <div class="post-category">
+          <a href="/categories/blog/"> blog </a>
+          </div>
+        <span class="more-meta"> 1343 words </span>
+        <span class="more-meta"> 3 mins read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p>由于 Hugo 没有像 Hexo 或者 Jekyll 那样和 Github Pages 集成，所以每次都需要手动生成 <code>public</code> 文件夹然后再部署到 Github Pages 的仓库。为了减少这种重复劳动，我开始寻找可以自动部署的方案，查到有两种：</p>
+
+<ol>
+<li>写一个脚本，每次发布文章时可以手动运行脚本来生成静态文件并部署</li>
+<li>使用 Travis CI 来进行自动部署</li>
+</ol>
+
+<p>由于没有使用过 Travis CI ，想要尝试一下，而且写脚本来完成手动工作看起来还是没有 Travis CI 那么优雅，最终我选择了 Travis CI 作为解决方案。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/hugo-travis/" class="read-more-link">Read more..</a>
+    </div>
+  </div>
+</article>
+
     <article class="post">
   <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/hugo/">Hugo 的安装与 Github Pages 部署</a></h1>

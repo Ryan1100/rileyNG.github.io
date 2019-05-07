@@ -6,10 +6,26 @@
     <description>Recent content in Posts on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 May 2019 22:03:59 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 10:38:37 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 博客使用 Travis CI 部署</title>
+      <link>https://rileyng.github.io/post/hugo-travis/</link>
+      <pubDate>Tue, 07 May 2019 10:38:37 +0800</pubDate>
+      
+      <guid>https://rileyng.github.io/post/hugo-travis/</guid>
+      <description>&lt;p&gt;由于 Hugo 没有像 Hexo 或者 Jekyll 那样和 Github Pages 集成，所以每次都需要手动生成 &lt;code&gt;public&lt;/code&gt; 文件夹然后再部署到 Github Pages 的仓库。为了减少这种重复劳动，我开始寻找可以自动部署的方案，查到有两种：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;写一个脚本，每次发布文章时可以手动运行脚本来生成静态文件并部署&lt;/li&gt;
+&lt;li&gt;使用 Travis CI 来进行自动部署&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;由于没有使用过 Travis CI ，想要尝试一下，而且写脚本来完成手动工作看起来还是没有 Travis CI 那么优雅，最终我选择了 Travis CI 作为解决方案。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 的安装与 Github Pages 部署</title>

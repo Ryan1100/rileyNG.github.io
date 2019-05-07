@@ -6,7 +6,7 @@
     <description>Recent content in Tags on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 06 May 2019 22:03:59 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 May 2019 10:38:37 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>hugo</title>
       <link>https://rileyng.github.io/tags/hugo/</link>
-      <pubDate>Mon, 06 May 2019 22:03:59 +0800</pubDate>
+      <pubDate>Tue, 07 May 2019 10:38:37 +0800</pubDate>
       
       <guid>https://rileyng.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travis</title>
+      <link>https://rileyng.github.io/tags/travis/</link>
+      <pubDate>Tue, 07 May 2019 10:38:37 +0800</pubDate>
+      
+      <guid>https://rileyng.github.io/tags/travis/</guid>
       <description></description>
     </item>
     
