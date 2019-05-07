@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>体系 on A simple blog</title>
+    <title>体系 on 一二三四</title>
     <link>https://rileyng.github.io/tags/%E4%BD%93%E7%B3%BB/</link>
-    <description>Recent content in 体系 on A simple blog</description>
+    <description>Recent content in 体系 on 一二三四</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Wed, 10 Apr 2019 14:26:00 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/tags/%E4%BD%93%E7%B3%BB/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>日本語敬語体系</title>
-      <link>https://rileyng.github.io/post/japanese-preview/</link>
+      <link>https://rileyng.github.io/posts/japanese-preview/</link>
       <pubDate>Wed, 10 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/japanese-preview/</guid>
+      <guid>https://rileyng.github.io/posts/japanese-preview/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;日本語の敬語体系は、一般に、大きく尊敬語・謙譲語・丁寧語に分類される。文化審議会国語分科会は、2007年2月に「敬語の指針」を答申し、これに丁重語および美化語を含めた5分類を示している。&lt;/p&gt;
 &lt;/blockquote&gt;

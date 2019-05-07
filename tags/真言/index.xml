@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>真言 on A simple blog</title>
+    <title>真言 on 一二三四</title>
     <link>https://rileyng.github.io/tags/%E7%9C%9F%E8%A8%80/</link>
-    <description>Recent content in 真言 on A simple blog</description>
+    <description>Recent content in 真言 on 一二三四</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 11 Apr 2019 14:26:00 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/tags/%E7%9C%9F%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,10 @@
     
     <item>
       <title>药师灌顶真言</title>
-      <link>https://rileyng.github.io/post/chinese-preview/</link>
+      <link>https://rileyng.github.io/posts/chinese-preview/</link>
       <pubDate>Thu, 11 Apr 2019 14:26:00 +0800</pubDate>
       
-      <guid>https://rileyng.github.io/post/chinese-preview/</guid>
+      <guid>https://rileyng.github.io/posts/chinese-preview/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;修学药师灌顶真言是药师法门的一部分，读诵修持有着极大的功德利益&lt;/p&gt;
 &lt;/blockquote&gt;
