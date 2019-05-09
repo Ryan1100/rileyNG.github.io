@@ -3,13 +3,13 @@
   
   <url>
     <loc>https://rileyng.github.io/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/categories/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -22,19 +22,19 @@
   
   <url>
     <loc>https://rileyng.github.io/post/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/tags/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/categories/blog/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,7 +46,7 @@
   
   <url>
     <loc>https://rileyng.github.io/tags/hugo/</loc>
-    <lastmod>2019-05-09T11:04:48+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,20 +58,20 @@
   
   <url>
     <loc>https://rileyng.github.io/post/hugo-travis/</loc>
-    <lastmod>2019-05-07T11:12:36+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/tags/travis/</loc>
-    <lastmod>2019-05-07T11:12:36+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/post/hugo/</loc>
-    <lastmod>2019-05-07T10:34:06+08:00</lastmod>
+    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
