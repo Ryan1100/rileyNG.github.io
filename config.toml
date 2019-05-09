@@ -150,7 +150,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.utter]
     repo = "rileyNG/blog-comment"
-    issueTerm = "pathname"
+    issueTerm = "title"
     theme = "github-light"
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
