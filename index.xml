@@ -5,10 +5,116 @@
     <description>Recent content on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 May 2019 10:38:37 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 May 2019 10:22:22 +0800</lastBuildDate>
     
         <atom:link href="https://rileyng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 添加评论系统 utterances</title>
+      <link>https://rileyng.github.io/post/hugo-utter/</link>
+      <pubDate>Thu, 09 May 2019 10:22:22 +0800</pubDate>
+      
+      <guid>https://rileyng.github.io/post/hugo-utter/</guid>
+      <description>&lt;h2 id=&#34;评论系统&#34;&gt;评论系统&lt;/h2&gt;
+
+&lt;p&gt;虽然博客没有什么人看，但是还是要添加一下评论系统嘛，这样如果博客有什么问题被人指出的话，也很方便交流。&lt;/p&gt;
+
+&lt;p&gt;我使用的 hugo 主题是 even，功能非常齐全，界面也很好看。在配置文件中我们可以看到 even 主题支持的评论系统有：disqus，畅言，来必力，gitment，gitalk 等等。&lt;/p&gt;
+
+&lt;p&gt;我的选择标准是：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;最好是国外服务，因为国内服务通常来说稳定性不够(可能开到一半就跑路不支持了)，所以畅言就被排除了&lt;/li&gt;
+&lt;li&gt;支持 markdown，所以 disqus 和 来必力 就被排除在外了&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;因此最终的选择就是基于 Github 的评论系统，even 支持的有 gitment, gitalk&lt;/p&gt;
+
+&lt;h2 id=&#34;安全性问题&#34;&gt;安全性问题&lt;/h2&gt;
+
+&lt;p&gt;最开始打算采用 gitment，但是仔细调查一番之后发现 gitment 存在一定的&lt;a href=&#34;https://blog.wolfogre.com/posts/security-problem-of-gitment/&#34;&gt;安全性问题&lt;/a&gt;。主要有两点：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;gitment 需要把 Client ID、Client Secret 以明文形式写进前端代码里&lt;/li&gt;
+&lt;li&gt;注册时需要的权限过多，包括对所有公开仓库的读写权限&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;具体的安全风险可以点击链接查看。&lt;/p&gt;
+
+&lt;h2 id=&#34;utterances&#34;&gt;utterances&lt;/h2&gt;
+
+&lt;p&gt;继续调研，发现一个非常好的开源的基于 Github 的评论系统：&lt;a href=&#34;https://github.com/utterance/utterances&#34;&gt;utterances&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;utterances 与 gitment 和 gitalk 的区别在于：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;utterances 只需要读写一个 repo 的权限&lt;/li&gt;
+&lt;li&gt;utterances 使用 bot 来初始化评论，比 gitment 更方便&lt;/li&gt;
+&lt;li&gt;utterances 对用户授权来说非常简单&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;它的原理是，设置一个用于放评论的 repo，然后对博客中的每一篇文章都有一个 issue，每个人的评论放在里面。&lt;/p&gt;
+
+&lt;p&gt;但是 even 主题并不支持 utterances，所以需要我们手动整合进入主题。&lt;/p&gt;
+
+&lt;h3 id=&#34;在even-主题中加入-utterances&#34;&gt;在even 主题中加入 utterances&lt;/h3&gt;
+
+&lt;p&gt;首先需要去 Github 上新建一个 public repo，名字无所谓，我取的是 &lt;code&gt;blog-comment&lt;/code&gt;，然后记下这个仓库名字，在博客中进行配置。&lt;/p&gt;
+
+&lt;p&gt;为了方便配置，我们把需要的参数都放在 &lt;code&gt;config.toml&lt;/code&gt; 文件中，在该文件中加入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;params&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;utter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+    &lt;span class=&#34;nx&#34;&gt;repo&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{githubName}/{repoName}&amp;#34;&lt;/span&gt;
+    &lt;span class=&#34;nx&#34;&gt;issueTerm&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt; &lt;span class=&#34;c&#34;&gt;#设置每篇文章对应的 issue 的名字，可选 pathname title url，&lt;/span&gt;
+    &lt;span class=&#34;nx&#34;&gt;theme&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;github-light&amp;#34;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;接着打开 &lt;code&gt;themes\even\layouts\partials&lt;/code&gt; 文件夹，我们可以看到很多 html 模板，我们需要改动的是 &lt;code&gt;comments.html&lt;/code&gt;，&lt;/p&gt;
+
+&lt;p&gt;文件内容的结构是非常清楚的，我们可以在 gitalk 下面加一个 utterances 的控制结构：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;{{- if .Site.Params.utter.repo -}}
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utter-container&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;div&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;https://utteranc.es/client.js&amp;#34;&lt;/span&gt;
+        &lt;span class=&#34;na&#34;&gt;repo&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;{{ .Site.Params.utter.repo }}&amp;#39;&lt;/span&gt;
+        &lt;span class=&#34;na&#34;&gt;issue-term&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;{{ .Site.Params.utter.issueTerm }}&amp;#34;&lt;/span&gt;
+        &lt;span class=&#34;na&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;{{ .Site.Params.utter.theme }}&amp;#39;&lt;/span&gt;
+        &lt;span class=&#34;na&#34;&gt;crossorigin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;anonymous&amp;#34;&lt;/span&gt;
+        &lt;span class=&#34;na&#34;&gt;async&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;script&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt; 
+  {{- end }}&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;这样，我们就完成了 utterances 的配置。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.xianmin.org/post/utterances-comment-system/&#34;&gt;更好的基于 github issues 的评论系统——utterances&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.wolfogre.com/posts/security-problem-of-gitment/&#34;&gt;Gitment 的安全性争议&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 博客使用 Travis CI 部署</title>
