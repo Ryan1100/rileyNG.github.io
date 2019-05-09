@@ -2,7 +2,7 @@
 title: "Hugo 添加评论系统 utterances"
 date: 2019-05-09T10:22:22+08:00
 lastmod: 2019-05-09T10:22:22+08:00
-draft: true
+draft: false
 hidden: false
 keywords: []
 description: "Hugo 添加评论系统 utterances"
@@ -13,15 +13,15 @@ author: ""
 ## 评论系统
 虽然博客没有什么人看，但是还是要添加一下评论系统嘛，这样如果博客有什么问题被人指出的话，也很方便交流。
 
-我使用的 hugo 主题是 even，功能非常齐全，界面也很好看。在配置文件中我们可以看到 even 主题支持的评论系统有：disqus，畅言，来必力，gitment，gittalk 等等。
+我使用的 hugo 主题是 even，功能非常齐全，界面也很好看。在配置文件中我们可以看到 even 主题支持的评论系统有：disqus，畅言，来必力，gitment，gitalk 等等。
 
 我的选择标准是：
 
 1. 最好是国外服务，因为国内服务通常来说稳定性不够(可能开到一半就跑路不支持了)，所以畅言就被排除了
 2. 支持 markdown，所以 disqus 和 来必力 就被排除在外了
 
-因此最终的选择就是基于 Github 的评论系统，even 支持的有 gitmen, gitalk
-
+因此最终的选择就是基于 Github 的评论系统，even 支持的有 gitment, gitalk
+<!--more-->
 ## 安全性问题
 最开始打算采用 gitment，但是仔细调查一番之后发现 gitment 存在一定的[安全性问题](https://blog.wolfogre.com/posts/security-problem-of-gitment/)。主要有两点：
 
