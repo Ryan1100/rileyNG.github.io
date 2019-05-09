@@ -31,7 +31,7 @@ Travis CI提供持续集成服务（Continuous Integration，简称 CI）。它�
 
 然后我们的 Travis 设置就完成了。
 
-## Github 仓库设置
+## Github 仓库设置
 因为不想再开太多的博客相关的 repo，所以我选择在 `{githubname}.github.io` 下面新建一个 `hugo` 分支：
 ```git
 git checkout -b hugo

@@ -99,6 +99,6 @@ hugo server -t even -D
 
 ## 部署到 Github Pages
 
-Github Pages 就不多说了，可以很方便地部署静态博客。在 Github 中先开一个 `{githubname}.github.io` 的 repo，然后把网站的静态文件放进去即可。
+Github Pages 就不多说了，可以很方便地部署静态博客。在 Github 中先开一个 `{githubname}.github.io` 的 repo，然后把网站的静态文件放进去即可。
 
 hugo 生成静态 `public` 文件：在 `mysite` 文件夹运行 `hugo` 命令即可得到一个 `public` 文件夹，将这个文件夹里的所有内容放到 Github 的相应 repo 里即可。**注意把 `config.tmol` 里的 baseURL 设置成你的 Github Pages 链接** (我最开始忘记了，然后很多资源就渲染不出来= =)
