@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Hugo 添加评论系统 utterances - A simple blog</title>
+  <title>Hugo 博客 Rss 全文输出设置 - A simple blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Riley" /><meta name="description" content="Hugo 添加评论系统 utterances" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="Riley" /><meta name="description" content="Hugo 博客 Rss 全文输出设置" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 <script type="application/javascript">
@@ -37,7 +37,7 @@ if (!doNotTrack) {
 <meta name="generator" content="Hugo 0.55.4 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://rileyng.github.io/post/hugo-utter/" />
+<link rel="canonical" href="https://rileyng.github.io/post/hugo-rss/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -49,27 +49,27 @@ if (!doNotTrack) {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Hugo 添加评论系统 utterances" />
-<meta property="og:description" content="Hugo 添加评论系统 utterances" />
+<meta property="og:title" content="Hugo 博客 Rss 全文输出设置" />
+<meta property="og:description" content="Hugo 博客 Rss 全文输出设置" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://rileyng.github.io/post/hugo-utter/" />
-<meta property="article:published_time" content="2019-05-09T10:22:22&#43;08:00"/>
-<meta property="article:modified_time" content="2019-05-09T11:04:48&#43;08:00"/>
+<meta property="og:url" content="https://rileyng.github.io/post/hugo-rss/" />
+<meta property="article:published_time" content="2019-05-10T15:42:45&#43;08:00"/>
+<meta property="article:modified_time" content="2019-05-10T16:15:23&#43;08:00"/>
 
-<meta itemprop="name" content="Hugo 添加评论系统 utterances">
-<meta itemprop="description" content="Hugo 添加评论系统 utterances">
-
-
-<meta itemprop="datePublished" content="2019-05-09T10:22:22&#43;08:00" />
-<meta itemprop="dateModified" content="2019-05-09T11:04:48&#43;08:00" />
-<meta itemprop="wordCount" content="841">
+<meta itemprop="name" content="Hugo 博客 Rss 全文输出设置">
+<meta itemprop="description" content="Hugo 博客 Rss 全文输出设置">
 
 
+<meta itemprop="datePublished" content="2019-05-10T15:42:45&#43;08:00" />
+<meta itemprop="dateModified" content="2019-05-10T16:15:23&#43;08:00" />
+<meta itemprop="wordCount" content="636">
 
-<meta itemprop="keywords" content="hugo,utterances,github," />
+
+
+<meta itemprop="keywords" content="hugo,rss," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo 添加评论系统 utterances"/>
-<meta name="twitter:description" content="Hugo 添加评论系统 utterances"/>
+<meta name="twitter:title" content="Hugo 博客 Rss 全文输出设置"/>
+<meta name="twitter:description" content="Hugo 博客 Rss 全文输出设置"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -136,14 +136,14 @@ if (!doNotTrack) {
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Hugo 添加评论系统 utterances</h1>
+      <h1 class="post-title">Hugo 博客 Rss 全文输出设置</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-05-09 </span>
+        <span class="post-time"> 2019-05-10 </span>
         <div class="post-category">
             <a href="/categories/blog/"> blog </a>
             </div>
-          <span class="more-meta"> 841 words </span>
+          <span class="more-meta"> 636 words </span>
           <span class="more-meta"> 2 mins read </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
       </div>
@@ -156,12 +156,8 @@ if (!doNotTrack) {
 <ul>
 <li>
 <ul>
-<li><a href="#评论系统">评论系统</a></li>
-<li><a href="#安全性问题">安全性问题</a></li>
-<li><a href="#utterances">utterances</a>
-<ul>
-<li><a href="#在even-主题中加入-utterances">在even 主题中加入 utterances</a></li>
-</ul></li>
+<li><a href="#hugo-全文-rss-输出">Hugo 全文 RSS 输出</a></li>
+<li><a href="#一些改动">一些改动</a></li>
 <li><a href="#参考链接">参考链接</a></li>
 </ul></li>
 </ul>
@@ -169,73 +165,20 @@ if (!doNotTrack) {
   </div>
 </div>
     <div class="post-content">
-      <h2 id="评论系统">评论系统</h2>
+      <p>因为平常就用 rss 订阅新闻的习惯，所以也想订阅一下自己的博客，even 这个主题直接在页面下面就有 rss 订阅链接的按钮。但是点进去之后发现输出的 rss 内容只有摘要的部分，这不正是我平常最反感的那类订阅吗(WTF)。所以&hellip;直接搜索一下解决方法吧。</p>
 
-<p>虽然博客没有什么人看，但是还是要添加一下评论系统嘛，这样如果博客有什么问题被人指出的话，也很方便交流。</p>
+<h2 id="hugo-全文-rss-输出">Hugo 全文 RSS 输出</h2>
 
-<p>我使用的 hugo 主题是 even，功能非常齐全，界面也很好看。在配置文件中我们可以看到 even 主题支持的评论系统有：disqus，畅言，来必力，gitment，gitalk 等等。</p>
-
-<p>我的选择标准是：</p>
+<p><a href="https://xuanwo.io/2018/04/08/hugo-rss-output-all-content/">这里</a>有一篇很好的解决方法。这个博客的博主相当厉害，令人感到羞愧。从他的博客里我学会了:</p>
 
 <ol>
-<li>最好是国外服务，因为国内服务通常来说稳定性不够(可能开到一半就跑路不支持了)，所以畅言就被排除了</li>
-<li>支持 markdown，所以 disqus 和 来必力 就被排除在外了</li>
+<li>RTFM is an initialism for the expression &ldquo;read the fucking manual&rdquo;.</li>
+<li>增加全文 RSS：
+在 <code>themes\even\layouts</code> 文件夹下新建一个 <code>index.rss.xml</code> 文件，内容为：</li>
 </ol>
-
-<p>因此最终的选择就是基于 Github 的评论系统，even 支持的有 gitment, gitalk</p>
-
-<h2 id="安全性问题">安全性问题</h2>
-
-<p>最开始打算采用 gitment，但是仔细调查一番之后发现 gitment 存在一定的<a href="https://blog.wolfogre.com/posts/security-problem-of-gitment/">安全性问题</a>。主要有两点：</p>
-
-<ol>
-<li>gitment 需要把 Client ID、Client Secret 以明文形式写进前端代码里</li>
-<li>注册时需要的权限过多，包括对所有公开仓库的读写权限</li>
-</ol>
-
-<p>具体的安全风险可以点击链接查看。</p>
-
-<h2 id="utterances">utterances</h2>
-
-<p>继续调研，发现一个非常好的开源的基于 Github 的评论系统：<a href="https://github.com/utterance/utterances">utterances</a>。</p>
-
-<p>utterances 与 gitment 和 gitalk 的区别在于：</p>
-
-<ol>
-<li>utterances 只需要读写一个 repo 的权限</li>
-<li>utterances 使用 bot 来初始化评论，比 gitment 更方便</li>
-<li>utterances 对用户授权来说非常简单</li>
-</ol>
-
-<p>它的原理是，设置一个用于放评论的 repo，然后对博客中的每一篇文章都有一个 issue，每个人的评论放在里面。</p>
-
-<p>但是 even 主题并不支持 utterances，所以需要我们手动整合进入主题。</p>
-
-<h3 id="在even-主题中加入-utterances">在even 主题中加入 utterances</h3>
-
-<p>首先需要去 Github 上新建一个 public repo，名字无所谓，我取的是 <code>blog-comment</code>，然后记下这个仓库名字，在博客中进行配置。</p>
-
-<p>为了方便配置，我们把需要的参数都放在 <code>config.toml</code> 文件中，在该文件中加入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">utter</span><span class="p">]</span>
-    <span class="nx">repo</span> <span class="p">=</span> <span class="s2">&#34;{githubName}/{repoName}&#34;</span>
-    <span class="nx">issueTerm</span> <span class="p">=</span> <span class="s2">&#34;title&#34;</span> <span class="c">#设置每篇文章对应的 issue 的名字，可选 pathname title url，</span>
-    <span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;github-light&#34;</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>接着打开 <code>themes\even\layouts\partials</code> 文件夹，我们可以看到很多 html 模板，我们需要改动的是 <code>comments.html</code>，</p>
-
-<p>文件内容的结构是非常清楚的，我们可以在 gitalk 下面加一个 utterances 的控制结构：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html"><span class="lnt"> 1
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -245,27 +188,74 @@ if (!doNotTrack) {
 </span><span class="lnt"> 8
 </span><span class="lnt"> 9
 </span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-html" data-lang="html">{{- if .Site.Params.utter.repo -}}
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;utter-container&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://utteranc.es/client.js&#34;</span>
-        <span class="na">repo</span><span class="o">=</span> <span class="s">&#39;{{ .Site.Params.utter.repo }}&#39;</span>
-        <span class="na">issue-term</span><span class="o">=</span> <span class="s">&#34;{{ .Site.Params.utter.issueTerm }}&#34;</span>
-        <span class="na">theme</span><span class="o">=</span> <span class="s">&#39;{{ .Site.Params.utter.theme }}&#39;</span>
-        <span class="na">crossorigin</span><span class="o">=</span> <span class="s">&#34;anonymous&#34;</span>
-        <span class="na">async</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span> 
-  {{- end }}</code></pre></td></tr></table>
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;rss</span> <span class="na">version=</span><span class="s">&#34;2.0&#34;</span> <span class="na">xmlns:atom=</span><span class="s">&#34;http://www.w3.org/2005/Atom&#34;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;channel&gt;</span>
+    <span class="nt">&lt;title&gt;</span>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link&gt;</span>{{ .Permalink }}<span class="nt">&lt;/link&gt;</span>
+    <span class="nt">&lt;description&gt;</span>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;generator&gt;</span>Hugo -- gohugo.io<span class="nt">&lt;/generator&gt;</span>{{ with .Site.LanguageCode }}
+    <span class="nt">&lt;language&gt;</span>{{.}}<span class="nt">&lt;/language&gt;</span>{{end}}{{ with .Site.Author.email }}
+    <span class="nt">&lt;managingEditor&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span class="nt">&lt;/managingEditor&gt;</span>{{end}}{{ with .Site.Author.email }}
+    <span class="nt">&lt;webMaster&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span class="nt">&lt;/webMaster&gt;</span>{{end}}{{ with .Site.Copyright }}
+    <span class="nt">&lt;copyright&gt;</span>{{.}}<span class="nt">&lt;/copyright&gt;</span>{{end}}{{ if not .Date.IsZero }}
+    <span class="nt">&lt;lastBuildDate&gt;</span>{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}<span class="nt">&lt;/lastBuildDate&gt;</span>{{ end }}
+    {{ with .OutputFormats.Get &#34;RSS&#34; }}
+        {{ printf &#34;<span class="nt">&lt;atom:link</span> <span class="na">href=</span><span class="s">%q</span> <span class="na">rel=</span><span class="s">\&#34;self\&#34;</span> <span class="na">type=</span><span class="s">%q</span> <span class="nt">/&gt;</span>&#34; .Permalink .MediaType | safeHTML }}
+    {{ end }}
+    {{ range first 10 (where .Data.Pages &#34;Section&#34; &#34;post&#34;)}}
+    <span class="nt">&lt;item&gt;</span>
+      <span class="nt">&lt;title&gt;</span>{{ .Title }}<span class="nt">&lt;/title&gt;</span>
+      <span class="nt">&lt;link&gt;</span>{{ .Permalink }}<span class="nt">&lt;/link&gt;</span>
+      <span class="nt">&lt;pubDate&gt;</span>{{ .Date.Format &#34;Mon, 02 Jan 2006 15:04:05 -0700&#34; | safeHTML }}<span class="nt">&lt;/pubDate&gt;</span>
+      {{ with .Site.Author.email }}<span class="nt">&lt;author&gt;</span>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}<span class="nt">&lt;/author&gt;</span>{{end}}
+      <span class="nt">&lt;guid&gt;</span>{{ .Permalink }}<span class="nt">&lt;/guid&gt;</span>
+      <span class="nt">&lt;description&gt;</span>{{ .Content | html }}<span class="nt">&lt;/description&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    {{ end }}
+  <span class="nt">&lt;/channel&gt;</span>
+<span class="nt">&lt;/rss&gt;</span></code></pre></td></tr></table>
 </div>
 </div>
-<p>这样，我们就完成了 utterances 的配置。</p>
+<p>这样我们就可以在 rss 订阅链接时获取到全文输出啦。具体的原理可以见<a href="https://xuanwo.io/2018/04/08/hugo-rss-output-all-content/">原博客</a>。</p>
+
+<p>怀着对原博滔滔不绝的敬仰之情逛了一圈博客。发现原博竟然是人文院毕业的，却成为了一个如此优秀的程序员(我想马上原地自爆)。而且原博有优秀的探索精神，有良好的阅读文档的习惯。</p>
+
+<h2 id="一些改动">一些改动</h2>
+
+<p>因为添加了 About 界面，而在测试过程中发现 rss 会输出 About 界面的内容，因此查询了一下使用方法，原文对文章的选择是：
+ <code>{{ range first 10 .Data.Pages }}</code>，我在上面把它改成了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml"><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-xml" data-lang="xml">{{ range first 10 (where .Data.Pages &#34;Section&#34; &#34;post&#34;)}}</code></pre></td></tr></table>
+</div>
+</div>
+<p>这样，在生成 rss 输出的时候就只会选择 post 中的最新10篇文章。</p>
 
 <h2 id="参考链接">参考链接</h2>
 
 <ol>
-<li><a href="https://www.xianmin.org/post/utterances-comment-system/">更好的基于 github issues 的评论系统——utterances</a></li>
-<li><a href="https://blog.wolfogre.com/posts/security-problem-of-gitment/">Gitment 的安全性争议</a></li>
+<li><a href="https://xuanwo.io/2018/04/08/hugo-rss-output-all-content/">Hugo RSS 配置输出全文</a></li>
 </ol>
     </div>
 
@@ -277,8 +267,8 @@ if (!doNotTrack) {
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2019-05-09
-        <a href="https://github.com/rileyNG/rileyNG.github.io/commit/aea0fa52293c137fc14575a3bf3ac53aebd311ed" title="release new post">(aea0fa5)</a>
+        2019-05-10
+        <a href="https://github.com/rileyNG/rileyNG.github.io/commit/551cf246b42775ace632d82afab5bd85e7b2049e" title="release new post">(551cf24)</a>
     </span>
   </p>
   
@@ -290,17 +280,12 @@ if (!doNotTrack) {
 <footer class="post-footer">
       <div class="post-tags">
           <a href="/tags/hugo/">hugo</a>
-          <a href="/tags/utterances/">utterances</a>
-          <a href="/tags/github/">github</a>
+          <a href="/tags/rss/">rss</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/hugo-rss/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hugo 博客 Rss 全文输出设置</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/post/hugo-travis/">
-            <span class="next-text nav-default">Hugo 博客使用 Travis CI 部署</span>
+        
+        <a class="next" href="/post/hugo-utter/">
+            <span class="next-text nav-default">Hugo 添加评论系统 utterances</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

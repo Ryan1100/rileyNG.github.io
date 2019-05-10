@@ -3,13 +3,50 @@
   
   <url>
     <loc>https://rileyng.github.io/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://rileyng.github.io/categories/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/post/hugo-rss/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/post/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/tags/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/categories/blog/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/tags/hugo/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rileyng.github.io/tags/rss/</loc>
+    <lastmod>2019-05-10T16:15:23+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,32 +58,8 @@
   </url>
   
   <url>
-    <loc>https://rileyng.github.io/post/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rileyng.github.io/tags/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rileyng.github.io/categories/blog/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://rileyng.github.io/tags/github/</loc>
     <lastmod>2019-05-09T11:04:48+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://rileyng.github.io/tags/hugo/</loc>
-    <lastmod>2019-05-09T11:35:25+08:00</lastmod>
     <priority>0</priority>
   </url>
   

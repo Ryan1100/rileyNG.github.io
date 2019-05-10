@@ -6,10 +6,19 @@
     <description>Recent content in hugo on A simple blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 May 2019 10:22:22 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 May 2019 15:42:45 +0800</lastBuildDate>
     
 	<atom:link href="https://rileyng.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 博客 Rss 全文输出设置</title>
+      <link>https://rileyng.github.io/post/hugo-rss/</link>
+      <pubDate>Fri, 10 May 2019 15:42:45 +0800</pubDate>
+      
+      <guid>https://rileyng.github.io/post/hugo-rss/</guid>
+      <description>&lt;p&gt;因为平常就用 rss 订阅新闻的习惯，所以也想订阅一下自己的博客，even 这个主题直接在页面下面就有 rss 订阅链接的按钮。但是点进去之后发现输出的 rss 内容只有摘要的部分，这不正是我平常最反感的那类订阅吗(WTF)。所以&amp;hellip;直接搜索一下解决方法吧。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hugo 添加评论系统 utterances</title>
